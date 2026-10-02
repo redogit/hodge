@@ -1,0 +1,94 @@
+{
+  "schema": "standalone-export-status/v1",
+  "workspace": "hodge",
+  "status": "validated-local-export-with-declared-limitations",
+  "source_bytes_and_modes": "verified against original Git blobs and SHA-256; original checkouts untouched",
+  "historical_scope_files": 91,
+  "dependency_files": 2,
+  "totals": {
+    "passed": 74,
+    "skipped": 0,
+    "additional_successful_checks": 0
+  },
+  "checks": [
+    {
+      "group": "hodge",
+      "check": "native-hodge",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/hodge/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "environment": {
+        "PYTHONPATH": "research/hodge/src"
+      },
+      "exit": 0,
+      "summary": [
+        "Ran 41 tests in 6.989s",
+        "OK"
+      ]
+    },
+    {
+      "group": "hodge",
+      "check": "span",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects/research/Hodge Span Lab",
+        "-p",
+        "test_*.py"
+      ],
+      "environment": {},
+      "exit": 0,
+      "summary": [
+        "Ran 17 tests in 0.159s",
+        "OK"
+      ]
+    },
+    {
+      "group": "hodge",
+      "check": "compass-api",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects/tools/Hodge Compass API",
+        "-p",
+        "test_*.py"
+      ],
+      "environment": {},
+      "exit": 0,
+      "summary": [
+        "Ran 16 tests in 0.029s",
+        "OK"
+      ]
+    }
+  ],
+  "earlier_failed_checks": [],
+  "root_validation_runner": "exercised successfully",
+  "limitations": [
+    "Chrome/Chromium browser checks could not run because google-chrome is absent.",
+    "Full Windows SDK, Android and native LLVM/MLIR builds were not tested.",
+    "All fifteen original exclusions remain absent; excluded test/projection tools are not claimed as validated.",
+    "Original scope status and original test reports are historical; this is a new export validation, not a replay claim for the old 740-test aggregate.",
+    "Original commits remain intact in the source repositories; unrelated full history is not imported into these scoped exports.",
+    "No remote repository creation, push, Pages publication or hosted deployment was performed."
+  ],
+  "content_scan": {
+    "unique_source_blobs": 1722,
+    "archive_members": 1067,
+    "credential_pattern_findings": 0,
+    "structured_private_origin_true_count": 0,
+    "scope": "Bounded credential and explicit private-origin-marker scan; not a universal personal-data classifier."
+  }
+}

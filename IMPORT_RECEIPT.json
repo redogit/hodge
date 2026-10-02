@@ -1,0 +1,746 @@
+{
+  "schema": "authorized-connector-import/v1",
+  "repository": "redogit/hodge",
+  "original_snapshot_commit": "89f69c0255563b49aef7c9cf8aa9651f32e61257",
+  "original_snapshot_tree": "bb550cc60c77a7824a8e8c4d1c3ac8c5fa177539",
+  "exact_history_bundle_sha256": "551aa6360976ef409535688edcc4863e2a987813127a945c94f6df51dfa3fa58",
+  "bootstrap_commit": "e67e63b6e7a9cdba11b4fd209531dfe5fd5143f7",
+  "commit_representation": "New connector-generated commit identities explicitly authorized; original exact-history bundles retained unchanged.",
+  "source_scope": {
+    "id": "hodge",
+    "name": "Hodge",
+    "purpose": "Correspondences, computations, research records, and bounded Hodge tooling",
+    "repositories": [
+      "conscience64",
+      "Other-Projects-"
+    ],
+    "source_roots": [
+      "conscience64/research/hodge",
+      "Other-Projects-/projects/research/Hodge Span Lab",
+      "Other-Projects-/projects/tools/Hodge Compass API"
+    ],
+    "entry_points": [
+      "conscience64/research/hodge/README.md",
+      "conscience64/research/projects/hodge-conjecture.md",
+      "Other-Projects-/projects/research/Hodge Span Lab/README.md"
+    ],
+    "organization_action": "Keep proof, source, computational evidence, and current state distinguishable",
+    "workspace_directory": "redogit/workspaces/hodge"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc23526fb184ca30304b85d8709a97d82646cb58",
+      "sha256": "7e9ae8cfd10ed919d51c6d885de783c8c62cd541999883fbfeff237faa9151a1"
+    },
+    {
+      "path": "EXPORT_DEPENDENCIES.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "775d94466021a264f706c07e87e4423c6c7cbf14",
+      "sha256": "ec6e7c42a8ae74f235c44fe16c140e4cd249b36e7893bd37f10425f30cc799c5"
+    },
+    {
+      "path": "EXPORT_EXCLUSIONS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989811995f9e8f05c5387803572506a2a2730d3f",
+      "sha256": "da0c382218a99a40e4744568021f5c604f387840e4313c36c348d7f4d0223161"
+    },
+    {
+      "path": "EXPORT_PROVENANCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a296761c980d495e3ad5f0b83ae96e8c282b2206",
+      "sha256": "2dd7fdd54e9ad43b4f781b6b45609beca1e3a9e77aa8ddf019620f579a277c9e"
+    },
+    {
+      "path": "Other-Projects-/COMMERCIAL_ACCESS_POLICY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a7bf9085173f85a42f8a4812f99bbdef24fc0b",
+      "sha256": "f15eeef67cc0f9069a0a6cd3fb0f219ac742cb1d41171cb18fd4f43940d70db2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43528641aa4bce188d9abe85b8cfc7caa342b42b",
+      "sha256": "3606ad4897905371a15388dbabdca8a334285ba1d01820b0e4551ee7942ca520"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/bridge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "594ac50d8b818d1c50b44a7543fb76719f7dd22f",
+      "sha256": "28c37cc4a2fd67b31f60dee5c89e82095cb43a8949f7338eb50ca46293dd7959"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/bridge_calibration.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff711f6e9fced9b6f2b515dc12f2ab7996f12f0e",
+      "sha256": "bb0117eb5dea8c1c2066ffc70a6130233fa758e29ef49d872334f22e16296f95"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/evidence/issue43_bridge_calibration_result.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f837d5d7ffea1d5912f249432c0a220ed4d45680",
+      "sha256": "196cf88cce20a55ebb236df14fbcfd5c9ef9d887c015201b222b5771bf56302f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32e0428252254b0e222e0630254e6d0999618900",
+      "sha256": "0c6d0d84a6433f0b614d65f778b0a56f1cb96f636242792fe0d5cec941f7da1d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/span.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2ae2f1e3346348bbec8e53ec3f683d55cf7693e",
+      "sha256": "7d1e1be4e8892f4603dfbfadf9e4d1b9a35405793b9cb3e2de6f48d5f5c72eed"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/test_bridge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d2a3dbe1a5e2d77d4759abd92fb3fc28adc274",
+      "sha256": "1a0d9df449cf5336e201e93db73a8f2afd58e2024fde9edf886a0a686393d259"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/test_bridge_evidence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33598b405154a6093888ed5964d6aab6651ba985",
+      "sha256": "4ce8d0fe8a2f299ee13a62d4c4b461a532c79e489930b918a4e713a5feff7b3a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/Hodge Span Lab/test_span.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b99440a47edf8f52c1b56c4c9d99dc4c0b056edb",
+      "sha256": "627e8104e0555158a3168fbe331fc7eb291b4e33d3ee6bada20c0fa44cdc7e9c"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/BENCHMARK_2026-09-25.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cffc320a2e9d23f1264be1b70da96226bfdcc2eb",
+      "sha256": "8fef2cc7702b5d14fe39e726c2165c8bd96403014d41ac7c30579a0072fdb97a"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c52b2e57c648f3bbf78229630f564bdc486ebe8",
+      "sha256": "7db73204414abc4cc5a8718e8238c7235ee505c4efbfb38d8fa848011501740f"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/benchmark.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb7e0a67d6171122708b743cbc043e5abac3a8d3",
+      "sha256": "23adbcc05265cae69be537c165fe7e06bdc7cae0c181bf4195a2e8e03c79766d"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/bootstrap_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d56b89fd280172a9384f05a6084e3bb72d73884",
+      "sha256": "6f5d4d5a5f8c28d37f1de60ca951b027d6998a1a20816c3757da0b0dbc629aa2"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d3d092d1718b82696768112401012349da4b072",
+      "sha256": "441e6b4651600c1e27406f81d75ec7c4000e83da3b0270ef36870f633a9eea1e"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/content_index.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a2098b814e1eb54bb8e0b0429cafa8bda20100f",
+      "sha256": "641a0e2f7ee6968817c0586ada334b7b7c13146e791672600353d3994249d064"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/docs/CONNECTIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6730451dc0877e60738586d06536e20d8ad7a942",
+      "sha256": "7bf1b343b55f79014030d6e01975201ecaf42971fb07fe6ca0ca8fd3ac5b6b68"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/hodge_compass_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a76b6bebd0aafb1b898e6c0248c6223ccdd5525",
+      "sha256": "bdcdedba1798148fbdd014b79b9fcb90c80661d1fb15e1babaa3357825e4d151"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/hodge_proof_graph_seed.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db700bdaada82c58a169e9afacf9b7bb618592fb",
+      "sha256": "63c1034ab0e4de05e28a8ed477eb641cc34c2b6e57d148b4ba24c25b571a51b5"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/openapi.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09009f26fe332b361df701ad08d8e1cb9ae1a7c3",
+      "sha256": "cb168019856ded8ac8925dcac2bbc40befb26be946026fe1bc803e4323b3d5f3"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/refresh_source_catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7794ff8fd494b2ab8d1138c35ff5f7c1b5416323",
+      "sha256": "484396a25d988499c5522806dfb01509cc59929b42d5db7ece3cabce4126c40a"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/source_catalog.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2f8a31f5aec59bcbc3946cac6a439b64d92b691",
+      "sha256": "0d22f74837da7ad8a556de40945df953f191b7278747b3fb121d84648704f59b"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/test_hodge_compass_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "940758b74bc74d609b6a48ca4ff2a9efe9a40094",
+      "sha256": "3e8d05b47aedf9222ceb602f5e9f1567271f2d81ba874dafda8c092b967a375f"
+    },
+    {
+      "path": "Other-Projects-/projects/tools/Hodge Compass API/w114_query_pack.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5702751e891af1c73286d651bfaceb416b4e3af6",
+      "sha256": "a28131fdbda7db55819bbb659da3318badbd88c8a585936209a28e6d7debbb3d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fed4364321ed4fd9cf3a41405b1f50583e6705d",
+      "sha256": "304c25064274ecf3d9caf930683e9650d941aa8bb86213bba6bea16f979195e2"
+    },
+    {
+      "path": "VALIDATE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc9bc36b9d18409b084c103693046ef6a7aa2a6c",
+      "sha256": "2104fe30aa5af358531a0a29639930158831256a4899fa6eb86d98173e5d45d8"
+    },
+    {
+      "path": "VALIDATION_STATUS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47dc79e74342c047ac9089549e3e85266b60e13d",
+      "sha256": "8a02b2977d7ba5ecb2ec33bc195553542bebc5371b73d5196a1de8d6319c48d5"
+    },
+    {
+      "path": "conscience64/COMMERCIAL_ACCESS_POLICY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a7bf9085173f85a42f8a4812f99bbdef24fc0b",
+      "sha256": "f15eeef67cc0f9069a0a6cd3fb0f219ac742cb1d41171cb18fd4f43940d70db2"
+    },
+    {
+      "path": "conscience64/research/hodge/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5076227634eb547fc2329301ff9fca6e14fc7f8d",
+      "sha256": "88cc226b5b1f953f9a595660a3161025a13437e74f2fc07e6c6fd9b7e88fed79"
+    },
+    {
+      "path": "conscience64/research/hodge/W114_RESEARCH_LOOP_SNAPSHOT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08832753d5be77624a9227007cc8fe69b04b303f",
+      "sha256": "af25699eba2b809e8b070cc2afa7a0539e7d69d2465063b5ea9870162c5efbea"
+    },
+    {
+      "path": "conscience64/research/hodge/claim_matrix.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a688ca3828aad04c9f7d21501f88cfb8d728b180",
+      "sha256": "ccae3ca16df127da8c3db40e76f1b5d27da9a3dd16a87af8cec56990a2d2924e"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/CONSCIENCE64_COOPERATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3ed4f17ac39ae99c241f80096ac3ceabeba549f",
+      "sha256": "af112f1b75b6192b52b5580e3a761814e1a4e8a354da529449efb1924714d176"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/DECISION_FIELD_CONTEXT_REFLOW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "700c27b59e57e5449854491bc81b6051b73c26d4",
+      "sha256": "c1c23d020a5f90296ca7d40d45170370ce6ac9068ed559737a97418322450a64"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/EVEN_WALL_SHIODA_CUBIC_SCREEN_2026-09-15.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbaf0d08c5645f1cd8113a5a4f89617e062caa2d",
+      "sha256": "5aad1970f945d90aa74b19e46fb3282cfeb457edb08fa7e049c2292746938694"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/GAP_COSET_TRANSFER_FILTER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eec77b7350dfbcfceabddbefc0be3437129c425",
+      "sha256": "27650899ae9c25461cd197d0798da3020473576fcfdc633b644a25fc449f0d6e"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/HODGE_COMPASS_API.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e40b0e0939f01dbb73df1cee908f543cb8bf9b74",
+      "sha256": "7a2032ac0a7a593bf77c85d4a9d9f6a70d57842abc1335f8f18b4e524fc1bb75"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/HODGE_FRONTIER_CORRECTION_2026-09-14.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc8f0d0e166e1f558f80b52278029093f0b18f50",
+      "sha256": "a8b5925482174ebcc7ecbd1649c0184e8c12ceecbeed29dc59b2e4961ec78d14"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/M39_SHIODA_KATSURA_DEPENDENCY_NOTE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f6d0e2933a7f1277259d8a1e931b892b7d3a9a",
+      "sha256": "b8535c1415067091c597dc497519a2b5edab21292f89c30f3af17350acfad298"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/METHOD_FIREWALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e81d0c19177c576f086b5ba2794f4b50815c4c7",
+      "sha256": "d04eb0100960214a6c651e793438717b94780e25c59f47d060c65bbf6f6f8845"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/RESEARCH_INTEGRATION_MAP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c983b5296207bd07dda0bd34989ec0ab07d74cb0",
+      "sha256": "eaee66c193005902f1ba22661508d06dd9fde18ef89e57b5f829043ce2af2643"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/STRUCTURAL_SUPPORTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18282d8f07d00929c6732ea09ceda6ae81418bb7",
+      "sha256": "45e0d1937930f8564827ebc94506eb14b393af3f62a873c52db4fe129231af46"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/TWO_PAIR_COSET_OBSTRUCTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ddbfeeb83da486a76ba289ac0caee6851ac0bcb",
+      "sha256": "63a95e49be8f431995a4b47aa31a91d5176bbfa44bb0f523adce4fd43ec46f8e"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_COMPILER_ENDPOINTS_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dde0802b2ff25c0db8e0378ed1b47f019f699035",
+      "sha256": "628ad5dbced7cf8fb2c49e07e4217d6cd845a7bc9d15d575a4532419814b1c6b"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_DUPLICATION_REFLECTION_PRIMITIVES_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82a5d8fbdeb49b2504e279d32b5844baed2d9d21",
+      "sha256": "2747c560421628932ed8f3f0cc0c8805c4a523b661ea0758c44c661104efef83"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_EXPLICIT_ARTIN_CARRIER_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ced48df83dea164e4642bce29e54e855b2d3478",
+      "sha256": "f32681bbd429ee903296eba8cbe76a9cd6d8146e9e511e1cab4cd996869ab7e8"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_EXPLICIT_KATSURA_SHIODA_CORRESPONDENCE_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21f9bd99b9a1174201649bfc6d0d42b12c400953",
+      "sha256": "a1d809f357e20a7fd86a1f1d57ad52fed0ebaca5582aed9a8843ab2c3d999463"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_MATRIX_FACTORIZATION_TARGET_CONTRACT_2026-09-15.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1654bc9365a9349425d758c81628296d7bb474dd",
+      "sha256": "b824ea4ade3f37c011d9a4de65820113f4b26c81c5d981b6f7c764e362a1349f"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_MOTIVIC_STANDARD_WORD_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7daf16212f234cdf0a88a03741cfe79a0a2ee436",
+      "sha256": "d4a11a5c5b6ec1797c655b472268281cb4551f16d9ec8add9692b565735d9890"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_N3_PROJECTIVE_CLOSURE_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72ad846fba20efdeabbed109a599784060d92aa7",
+      "sha256": "17560686c0c348a57b8511e2c0c41c886110fa99737d82f7d30e9554e7b647a6"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_N3_TRANSFER_CORRESPONDENCE_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12bdaa41f1acf2fd51d500727d88e3f124afb99d",
+      "sha256": "074c8ae6cb47f0ea69ec087dd268e66730430c9cf783fd4356a1c196acd03221"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_OTSUBO_YAMAZAKI_FACTORIZATION_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9386ad32fd72fbeaf633f13bed494f0a89c7025",
+      "sha256": "4d665653cd821c2135c3b3547a94eee006e9662b265c8d7aad1a04b1e72a764c"
+    },
+    {
+      "path": "conscience64/research/hodge/docs/W114_SIGN_NORMALIZATION_CORRECTION_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b365dbdf8784958038389407ac6bea49d2196f3",
+      "sha256": "efd343543f406fe148e2d8fcdfb16f92f9565c117364689aef36b6b57eea9472"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/DF_HODGE_01_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eabc4e7e1d30ddcc18dbd7a3e1d1ac716d7121a9",
+      "sha256": "7c3a2af022067b64a95565c552ec656fb449b20ae199c6732a62967bcfd99129"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/DF_HODGE_02_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8904768c3ab7b3df194be0edba1bb9334cd23c08",
+      "sha256": "97059a888b058210cf248e532556e4d0a38b9c5893af621bedf3d0abb440f779"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/DF_HODGE_03_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf29075e4af2fa9dfe38e1edd5e5c3a542f09272",
+      "sha256": "5daa04f7915fa33e238966b18d59c1208d7b09f01e7be58fc67cdd9e54de912a"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/EVEN_WALL_SHIODA_CUBIC_SCREEN_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "007c988ec7fbde9ba38260b47851a86ba5b0922d",
+      "sha256": "8b9a46f4712fa02cce623517e036493a4b791498306a04979dfea09ed445d908"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/EVEN_WALL_STAR_SPLIT_COSET_SEARCH_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "829b924eca060eddf01f3ec9f668cbc9d1747857",
+      "sha256": "a3bb2ff5721ec8f106921c326f2d700946c616eb14c0afed01571f04f3e8b550"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/LIFTED_TWO_PAIR_COSET_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2afde006de0a545c1df4db46855cb8af0127f34d",
+      "sha256": "e7268eb31ef7499628acbcb01b98cf1e5ac14ba46bb652ecf8cd0ca4f36abd2a"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/M39_STAR_SPLIT_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07111790eb8d4b2a639cee6b520083afa99944fe",
+      "sha256": "c42e8245a9cd70c2b6b3619c751eee8408b3c42e7cf9a1c1f44f7b31d9c9dd22"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/ODD_DIVISOR_INFLATION_COSET_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c65d4b93bbba8ffbd6962d67e7275f9f1c52ac",
+      "sha256": "9737f767388f79e1fa55ba615c49820be6181c4274f589ed707aa5a76602475a"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/TWO_PAIR_COSET_SEARCH_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70bf6cffaf6ed3e84fa1676b08059f24ccfde25d",
+      "sha256": "484295510c20d5ae7171beb6d86253c207873479ec0aaa4285e185a6e505a648"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/W114_FACTORIZATION_CONTROLS_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02d2c69390c13bc34e83718d0d82be8229456f0d",
+      "sha256": "f368961b7728c95798dc4ea3b73f261f6d0b2c5507dcf357db9403fd23fc58b9"
+    },
+    {
+      "path": "conscience64/research/hodge/evidence/recorded/W114_LIFT570_TWO_PAIR_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fdba416038a489096f662c838c1a43767be287d",
+      "sha256": "930c39b6b076e9e39ed71a67d7b2cef8d1ceb15955242e6beb147355fbfc1e9b"
+    },
+    {
+      "path": "conscience64/research/hodge/src/coset_star_split_search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993cb166da0175afd518d758d0457060f53c8098",
+      "sha256": "853722109f156a010f2cd907a6189a0467b7d36ff95bd53a65aa6b2f266c053d"
+    },
+    {
+      "path": "conscience64/research/hodge/src/decision_field_v0_1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d6fa70230372d447b57da9e4bbadfae9d1c4880",
+      "sha256": "3080d9ccdb779247ed6a1f1c188f227940ab6c09c2b173a9f72ca452a4be69c8"
+    },
+    {
+      "path": "conscience64/research/hodge/src/df_hodge_02.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c52345a54ae35819d98bcaf6ba2d98c9b5b13b",
+      "sha256": "47daaedfd1f71f5432df5743ef7e46c0c8094e390bacbfe413b14bf7defc9c77"
+    },
+    {
+      "path": "conscience64/research/hodge/src/even_wall_shioda_cubic_screen.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3852b27dbacf40b811032894afed43656fba8d5a",
+      "sha256": "2e044bca11f586d409b570fef38afa59cb7bd72754cdcb501434aeb65fd58fea"
+    },
+    {
+      "path": "conscience64/research/hodge/src/even_wall_verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf01bf08f063d785aae1cdac2aba2929c7c3293",
+      "sha256": "239c9e5d42345d06358ba671bf4f3fa7a7b09e6e48519709d9e4f7dd8bd060e7"
+    },
+    {
+      "path": "conscience64/research/hodge/src/m39_star_split_verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794b9d5867b063177dd9d8ebd8c388bfc77fac0f",
+      "sha256": "f665f7b42914e68522d4dac54d4302a18da52edfd648b45f2dcc2ad7694d9bff"
+    },
+    {
+      "path": "conscience64/research/hodge/src/odd_divisor_inflation_coset_search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "589e7e27e6e5eb55906ec760c295fb6f70607efd",
+      "sha256": "eaef16cd7c0908c4108f0f8510160e2a168c09c8af868203be11f9f37285ccc2"
+    },
+    {
+      "path": "conscience64/research/hodge/src/two_pair_coset_search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53433d6e277c816c5aaa00b09d732ecdfce2dc7",
+      "sha256": "9dc814f3a0dc1a4eaa8d7d82864b0d9088fd5ece22d86093aa16e282060d8ea7"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_compiler_endpoints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6887c457667e26f33380b9808a4689ce997572c1",
+      "sha256": "0dddebfae507dd7c33695b96ac10fe33285c10c054bf3b1d2f05b4ad309a22e7"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_duplication_reflection_primitives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5742bae3f6ac0d09cdfa54378cb35a670ebeaa52",
+      "sha256": "4657029b972b64634e1aa3d726c2162648529898c6bfb40aa1c4acf12ff7f2f8"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_explicit_artin_carrier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3948b96034aa691a9989222ad2b252f2ce477d7e",
+      "sha256": "233b7a79b1f2ddaba5663ff25ec3551e16b02131586c1fe4ca3d987baa69221f"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_explicit_ks_correspondence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d872b3b690be57f0d7b09dd8f6099035e1a9b57a",
+      "sha256": "8c415ae7450f86a4a00f12507fe94210c53b6cbd8582b9cdee6f8234c40a7780"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_motivic_standard_word.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "645a2e27e9670c46288c42dc01b98a325340b854",
+      "sha256": "89d45f335ee1f70520a359750ec1287afb0a1ed389beda919e666ef8e84b25e2"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_n3_projective_closure.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "309d5793da04c7a575069c6f284dfc7fd7dee487",
+      "sha256": "9e9d70b3d0b3e9984a918fa8fc7c794df3130b80d12ee82601bcd4ad752d22e6"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_n3_transfer_correspondence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d2bf14d3c2a4c74d85e986e26337a9c34c52b1",
+      "sha256": "c8c8df5e8fbd2004f37854990626d4e0fef39f80765155d44ed724aba4442970"
+    },
+    {
+      "path": "conscience64/research/hodge/src/verify_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84cfb10381fd0c9c59f49d94b1d37e0abec80821",
+      "sha256": "e4abfa95e57eb8a948cdf2e82c79b3200be2b34cc80d2d4cb5cc3c348377243c"
+    },
+    {
+      "path": "conscience64/research/hodge/src/w114_factorization_controls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d31be1cbf2fb44afecedc5d8aa228b87581681c7",
+      "sha256": "a00a7c61592cd186bd1694b0d5064a693ed9c71dc4080816fe383e73eddce137"
+    },
+    {
+      "path": "conscience64/research/hodge/src/w114_lift570_two_pair.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a296409179e76eead1679008c2545214770594a9",
+      "sha256": "95d2384455a5b72f28c647f49f313034e8febe0f5cf164f89583933d8a97c677"
+    },
+    {
+      "path": "conscience64/research/hodge/src/w114_otsubo_yamazaki_factorization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa8c666fdf4dcec44e264ed9d9dc59d02470b826",
+      "sha256": "90a712e225af485e839536db39cccf5113adec349652f5d63f68f6d0d2c13096"
+    },
+    {
+      "path": "conscience64/research/hodge/src/w114_research_loop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc83a028efc605691e6dcf71a9153f3e9b0a1976",
+      "sha256": "c69dd76aade86ff43be3369066b925a969b23357b39a69298b261b14d12de311"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_even_wall_shioda_cubic_screen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc96edfb6f5dc3117a606e79086195e91148bb2",
+      "sha256": "216527904fb04efed45bfdaf03a1d1477268731b7c25c45b56f067f5345eb48f"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_compiler_endpoints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc9cec835026e683cd7af0e5697ce9141fdd3984",
+      "sha256": "e36335d60468abeabc7aa46aef9dcb1306e858ba4f7e2fadf5fc03d02b5256c2"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_duplication_reflection_primitives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1daa4c26812b80b00045be9fe887a8cb3d31aacc",
+      "sha256": "b58e72b4b5ea993e7626f4bd3a0f8eb4f8edaaf6e376f8498b78c07e7ade6af4"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_explicit_artin_carrier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a56bb1a1de7656dd3e1892d635c3fd2dd64a0ca",
+      "sha256": "548ffca6fd0484fb973e41f9a91b0274f5fb8cf2f2c6ff1063f41fb78bce25a9"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_explicit_ks_correspondence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4c6ef70d38ad4ec33a41262400b1e216d8d7449",
+      "sha256": "c0e5a42e4e2b92c3c0608153966299299f3059ce07aa26ece0d372f2dbf99f38"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_motivic_standard_word.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd7224045922c39890e508ded5794c291bb1a4c1",
+      "sha256": "442622df4145d2ede0f0299bc23ab1459d766126ecb65f6d0604de0ccf1afa66"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_n3_projective_closure.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8839ccd9c06725a4566e26f910af4f755ce8d294",
+      "sha256": "eae06bb99a78c300552364434ee3fbdcf556f47c8dc0f83e37ebd068dedc5660"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_verify_w114_n3_transfer_correspondence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8663cf96786b6bdf859b95d536b3590662385d11",
+      "sha256": "c55784bb5ea0346af2bc66bb3577113fd8c731fabde44644d1a20b410d8e4d4c"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_w114_factorization_controls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c26d2c4a62045daa0591b437a6dadc326ae7519",
+      "sha256": "2c3a59582e9ccf9d5ddc44cb51e387ca6e38f3a5052b04ee446b756d03579d52"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_w114_otsubo_yamazaki_factorization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91575baa95d976ca37b5d1f2a68f6df4d9689b49",
+      "sha256": "dda352416858c27f79cd8bbaeb410823ebd60a89b4bfe0cd36332abe8c787246"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_w114_research_loop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b42f92aca344bc7c9a208d108a4181f8f67adc8a",
+      "sha256": "95dfba26c8c46cf30dc148744bae6d063344702d6644c2922231bd30f9f10bd8"
+    },
+    {
+      "path": "conscience64/research/hodge/tests/test_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adac68797ccbbf9869b75ae12be02b9fa9dc4380",
+      "sha256": "becefbadf73ea54cf0bb5312b7533cfd4536d4070b1f0b8350f99a3074056cf4"
+    },
+    {
+      "path": "conscience64/research/projects/hodge-conjecture.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6cccf86fb49320051ce46a6882a32b21c53930e",
+      "sha256": "59a281b3a8f963a6b7de0df4f17071787c665c12e0f1ce5fcad095190c1b3b0b"
+    },
+    {
+      "path": "validate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd14b4ead1b20497f54f88bde0bdff14100ef91c",
+      "sha256": "bc021c28d55f4415d6b8cfa868c23f4fd3e80ad5bbc7871e7835df6ca6b17d1a"
+    }
+  ],
+  "rights": "Original rights and exclusions retained without relicensing; EXPORT_EXCLUSIONS.json and source policies authoritative.",
+  "evidence": "Historical EXPORT_PROVENANCE.json describes preparation-stage status, not current approval. Saved validation receipts remain historical; this import verifies exact Git source tree and file hashes/modes, not a fresh full test run.",
+  "additional_files": [
+    "IMPORT_BOOTSTRAP.md",
+    "IMPORT_RECEIPT.json"
+  ],
+  "hodge_claim_limit": "Bounded computational/research tooling; no Hodge conjecture proof claim."
+}
