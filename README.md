@@ -1,5 +1,7 @@
 # Hodge
 
+> **Public page:** https://redogit.github.io/hodge/ · **Main / About:** https://redogit.github.io/redogit/
+
 Correspondences, computations, research records, and bounded Hodge tooling.
 
 This standalone export preserves original source paths and bytes. Necessary cross-project dependencies are copied with explicit provenance; ownership and historical evidence remain with their source projects.
