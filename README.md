@@ -14,6 +14,7 @@ As of **2026-10-08**, this repository is the canonical home for Hodge-specific r
 - [Hodge Span Lab](research/span-lab/README.md)
 - [Hodge Compass API](tools/compass-api/README.md)
 - [Hodge perturbation experiment](experiments/hodge-perturbation-game/README.md)
+- [W114 Android/RMAOS perturbation surfaces](experiments/w114-perturbation/README.md)
 
 ## Canonical layout
 
@@ -23,6 +24,7 @@ research/projects/               canonical project state
 research/span-lab/               exact span / deformation diagnostics
 tools/compass-api/               provenance-first search and proof graph
 experiments/hodge-perturbation-game/
+experiments/w114-perturbation/    Android + RMAOS W114 adapters
 evidence/                        retained run evidence and contracts
 ```
 
