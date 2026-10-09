@@ -4,35 +4,80 @@
     {
       "name": "canonical-hodge-core",
       "cwd": "research/hodge",
-      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test*.py"],
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py"
+      ],
       "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "hodge-conformance",
       "cwd": ".",
-      "command": ["python", "research/hodge/conformance/hodge_conformance.py"],
+      "command": [
+        "python",
+        "research/hodge/conformance/hodge_conformance.py"
+      ],
       "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "span",
       "cwd": "research/span-lab",
-      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py"],
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
       "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "compass-api",
       "cwd": "tools/compass-api",
-      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py"],
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
       "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "perturbation-game",
       "cwd": "experiments",
-      "command": ["python", "-m", "unittest", "test_hodge_perturbation_game.py"],
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "test_hodge_perturbation_game.py"
+      ],
+      "environment": {},
+      "timeout_seconds": 300
+    },
+    {
+      "name": "w114-android-static",
+      "cwd": "experiments/w114-perturbation/android",
+      "command": [
+        "python",
+        "verify_project.py"
+      ],
       "environment": {},
       "timeout_seconds": 300
     }

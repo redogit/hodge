@@ -7,7 +7,10 @@
     {
       "repository": "redogit/conscience64",
       "revision": "fcbd047918e37d5d338ae16087dd23b5155123f4",
-      "scope": ["research/hodge/**", "research/projects/hodge-conjecture.md"],
+      "scope": [
+        "research/hodge/**",
+        "research/projects/hodge-conjecture.md"
+      ],
       "files_migrated": 126,
       "note": "Includes Hodge Lab v0.2 E001-E010 conformance work formerly proposed as conscience64 PR #228."
     },
@@ -22,7 +25,14 @@
         "evidence/hodge-span-001/**",
         "hodge-run-contract.json"
       ],
-      "files_migrated": 32
+      "files_migrated": 32,
+      "additional_scope": [
+        "android/w114-perturbation-lab/**",
+        "RMAOS MiniGX/circuits/w114_perturbation.rmal",
+        "RMAOS MiniGX/shaders/w114_field.frag",
+        ".github/workflows/w114-perturbation-android.yml (reimplemented for canonical paths)"
+      ],
+      "additional_files_migrated": 18
     }
   ],
   "canonical_roots": [
@@ -31,9 +41,13 @@
     "research/span-lab",
     "tools/compass-api",
     "experiments/hodge-perturbation-game",
-    "evidence"
+    "evidence",
+    "experiments/w114-perturbation"
   ],
-  "historical_export_roots_retained": ["conscience64", "Other-Projects-"],
+  "historical_export_roots_retained": [
+    "conscience64",
+    "Other-Projects-"
+  ],
   "hard_boundaries": [
     "SOFTWARE_VERIFICATION != MATHEMATICAL_PROOF",
     "METHOD_TRANSFER != EVIDENCE_TRANSFER",
