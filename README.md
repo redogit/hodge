@@ -1,34 +1,59 @@
 # Hodge
 
-> **Public page:** https://redogit.github.io/hodge/ · **Main / About:** https://redogit.github.io/redogit/
+> **Canonical repository:** https://github.com/redogit/hodge · **Public page:** https://redogit.github.io/hodge/
 
-Correspondences, computations, research records, and bounded Hodge tooling.
+Correspondences, exact computations, research records, bounded Hodge tooling, and the live Hodge command/event laboratory.
 
-This standalone export preserves original source paths and bytes. Necessary cross-project dependencies are copied with explicit provenance; ownership and historical evidence remain with their source projects.
+As of **2026-10-08**, this repository is the canonical home for Hodge-specific research that previously lived under `redogit/conscience64` and `redogit/Other-Projects-`. The original repositories and commits remain historical provenance; new Hodge-owned development should land here.
 
 ## Start here
 
-- [Hodge research and checks](<conscience64/research/hodge/README.md>)
-- [Hodge API](<Other-Projects-/projects/tools/Hodge Compass API/README.md>)
+- [Current Hodge research spine](research/hodge/README.md)
+- [Canonical project state](research/projects/hodge-conjecture.md)
+- [Hodge Lab v0.2 conformance suite](research/hodge/conformance/README.md)
+- [Hodge Span Lab](research/span-lab/README.md)
+- [Hodge Compass API](tools/compass-api/README.md)
+- [Hodge perturbation experiment](experiments/hodge-perturbation-game/README.md)
+
+## Canonical layout
+
+```text
+research/hodge/                  target-native Hodge research + W114
+research/projects/               canonical project state
+research/span-lab/               exact span / deformation diagnostics
+tools/compass-api/               provenance-first search and proof graph
+experiments/hodge-perturbation-game/
+evidence/                        retained run evidence and contracts
+```
+
+The older `conscience64/` and `Other-Projects-/` trees are retained as **historical export snapshots**. They are not the forward development surface. Compatibility symlinks preserve the former root names for tools that still expect them.
+
+## Authority boundary
+
+```text
+SOFTWARE_VERIFICATION != MATHEMATICAL_PROOF
+METHOD_TRANSFER != EVIDENCE_TRANSFER
+CALIBRATION_RESULT != OPEN_PROBLEM_RESULT
+SIMILARITY != SOURCE_IDENTITY
+VISUALIZATION != EVIDENCE_PROMOTION
+TIMEOUT != NEGATIVE_RESULT
+```
+
+The Hodge conjecture is not established by this repository. W114/MOT-1 remains an open research obligation wherever the current target-native state says it is open.
 
 ## Validate locally
 
-Preparation used Python 3.12.14 and Node.js 24.19.0 for the included Python/Node checks. Coordinate-space checks additionally use the pinned NumPy requirement in their source directory. RMAL builds require CMake 3.25 or later and a C23/C++23 compiler; Clang 19 was tested. No package downloads or remote mutations are performed by the validation runner.
+Python 3 and Node.js are required for the canonical validation suite.
 
 ```sh
 python validate.py --integrity-only
 python validate.py
 ```
 
-Individual checks can be selected with `--check NAME`; names and exact commands are in `VALIDATE.json`. For RMAL, select a suitable compiler with `CC` and `CXX`; `CMAKE` and `CTEST` may specify executable paths.
+Individual checks can be selected with `--check NAME`; exact commands are in [VALIDATE.json](VALIDATE.json).
 
-## Provenance and limits
+## Provenance
 
-- `EXPORT_PROVENANCE.json` is the unchanged historical scope snapshot and original file inventory. Its initial candidate status is historical, not a fresh readiness result.
-- `EXPORT_DEPENDENCIES.json` records every additional source file and explicit compatibility/validation repair.
-- `EXPORT_EXCLUSIONS.json` keeps all fifteen original withheld paths absent. No private-origin publication approval is inferred.
-- `VALIDATION_STATUS.json` records the latest export checks and remaining limitations.
-- Original source history remains unchanged in the original repositories; this export does not import unrelated commit history.
-- Existing commercial-access policy files and licenses remain in their original source paths. No new license grant is implied.
-
-Source READMEs, workflows under source subdirectories, manifests, and evidence remain historical bytes. Their references to original repository layouts or prior deployments are not claims that a new deployment exists. Use this root validation runner for this export. Full browser, Windows/Android and native LLVM/MLIR validation is outside the tested scope.
+- [CANONICAL_MIGRATION_2026-10-08.json](CANONICAL_MIGRATION_2026-10-08.json) records the source revisions and migration scope that established this repository as the canonical Hodge home.
+- `EXPORT_PROVENANCE.json`, `EXPORT_DEPENDENCIES.json`, and `EXPORT_EXCLUSIONS.json` remain the historical standalone-export record and are intentionally not rewritten.
+- Historical source paths and commit history remain available in their predecessor repositories; migration does not convert cross-project methods into Hodge evidence.

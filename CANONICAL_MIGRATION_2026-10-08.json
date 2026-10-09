@@ -1,0 +1,43 @@
+{
+  "schema": "hodge/canonical-migration/v1",
+  "date": "2026-10-08",
+  "canonical_repository": "redogit/hodge",
+  "policy": "Hodge-specific research is canonical here; predecessor repositories retain historical commit provenance and shared cross-domain methods keep their original authority.",
+  "sources": [
+    {
+      "repository": "redogit/conscience64",
+      "revision": "fcbd047918e37d5d338ae16087dd23b5155123f4",
+      "scope": ["research/hodge/**", "research/projects/hodge-conjecture.md"],
+      "files_migrated": 126,
+      "note": "Includes Hodge Lab v0.2 E001-E010 conformance work formerly proposed as conscience64 PR #228."
+    },
+    {
+      "repository": "redogit/Other-Projects-",
+      "revision": "4a05785e4376c558ed7ad761f89db9dd241bca7b",
+      "scope": [
+        "Hodge Span Lab/**",
+        "Hodge Compass API/**",
+        "Decision Field Operator Lab/hodge-perturbation-game/**",
+        "Decision Field Operator Lab/test_hodge_perturbation_game.py",
+        "evidence/hodge-span-001/**",
+        "hodge-run-contract.json"
+      ],
+      "files_migrated": 32
+    }
+  ],
+  "canonical_roots": [
+    "research/hodge",
+    "research/projects",
+    "research/span-lab",
+    "tools/compass-api",
+    "experiments/hodge-perturbation-game",
+    "evidence"
+  ],
+  "historical_export_roots_retained": ["conscience64", "Other-Projects-"],
+  "hard_boundaries": [
+    "SOFTWARE_VERIFICATION != MATHEMATICAL_PROOF",
+    "METHOD_TRANSFER != EVIDENCE_TRANSFER",
+    "CALIBRATION_RESULT != OPEN_PROBLEM_RESULT",
+    "SIMILARITY != SOURCE_IDENTITY"
+  ]
+}
