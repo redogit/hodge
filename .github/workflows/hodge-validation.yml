@@ -1,0 +1,47 @@
+name: Hodge Canonical Validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'research/**'
+      - 'tools/compass-api/**'
+      - 'experiments/**'
+      - 'evidence/**'
+      - 'validate.py'
+      - 'VALIDATE.json'
+      - 'CANONICAL_MIGRATION_2026-10-08.json'
+      - '.github/workflows/hodge-validation.yml'
+  pull_request:
+    paths:
+      - 'research/**'
+      - 'tools/compass-api/**'
+      - 'experiments/**'
+      - 'evidence/**'
+      - 'validate.py'
+      - 'VALIDATE.json'
+      - 'CANONICAL_MIGRATION_2026-10-08.json'
+      - '.github/workflows/hodge-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hodge-canonical-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Runtime versions
+        run: |
+          python3 --version
+          node --version
+      - name: Historical export integrity
+        run: python3 validate.py --integrity-only
+      - name: Canonical Hodge validation
+        run: python3 validate.py

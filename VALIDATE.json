@@ -1,60 +1,44 @@
 {
-  "schema": "standalone-export-validation/v1",
+  "schema": "hodge-canonical-validation/v2",
   "checks": [
     {
-      "name": "native-hodge",
-      "cwd": "conscience64",
-      "command": [
-        "python",
-        "-m",
-        "unittest",
-        "discover",
-        "-s",
-        "research/hodge/tests",
-        "-p",
-        "test_*.py"
-      ],
-      "environment": {
-        "PYTHONPATH": "research/hodge/src"
-      },
+      "name": "canonical-hodge-core",
+      "cwd": "research/hodge",
+      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test*.py"],
+      "environment": {},
+      "timeout_seconds": 300
+    },
+    {
+      "name": "hodge-conformance",
+      "cwd": ".",
+      "command": ["python", "research/hodge/conformance/hodge_conformance.py"],
+      "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "span",
-      "cwd": "Other-Projects-",
-      "command": [
-        "python",
-        "-m",
-        "unittest",
-        "discover",
-        "-s",
-        "projects/research/Hodge Span Lab",
-        "-p",
-        "test_*.py"
-      ],
+      "cwd": "research/span-lab",
+      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py"],
       "environment": {},
       "timeout_seconds": 300
     },
     {
       "name": "compass-api",
-      "cwd": "Other-Projects-",
-      "command": [
-        "python",
-        "-m",
-        "unittest",
-        "discover",
-        "-s",
-        "projects/tools/Hodge Compass API",
-        "-p",
-        "test_*.py"
-      ],
+      "cwd": "tools/compass-api",
+      "command": ["python", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py"],
+      "environment": {},
+      "timeout_seconds": 300
+    },
+    {
+      "name": "perturbation-game",
+      "cwd": "experiments",
+      "command": ["python", "-m", "unittest", "test_hodge_perturbation_game.py"],
       "environment": {},
       "timeout_seconds": 300
     }
   ],
   "not_exercised": [
-    "Chrome/Chromium browser checks (browser absent in preparation environment).",
-    "Windows SDK, Android and full LLVM/MLIR native builds.",
-    "Excluded projection verifier and privacy/lineage documents/tests remain withheld."
+    "Full Windows SDK, Android, LLVM/MLIR, and browser-GPU validation.",
+    "Historical source-export test commands are preserved by provenance but canonical checks above are the forward validation surface."
   ]
 }
